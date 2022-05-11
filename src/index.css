@@ -25,7 +25,7 @@
   --container-width-sm: 90%;
 }
 
-hmtl {
+html {
   scroll-behavior: smooth;
 }
 
@@ -76,11 +76,12 @@ section > h2 {
 .text-light {
   color: var(--color-light);
 }
-.a {
+a {
   color: var(--color-primary);
-  transition: var(--transition)
+  transition: var(--transition);
+  /* text-decoration: none */
 }
-.a:hover {
+a:hover {
   color: var(--color-white);
 }
 
