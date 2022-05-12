@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import Me from "../../assets/l2.jpg";
-import Me2 from "../../assets/lovroBewerbungPhoto.png";
+
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import { BsChevronDoubleDown } from "react-icons/bs";
