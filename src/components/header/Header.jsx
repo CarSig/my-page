@@ -21,7 +21,7 @@ const Header = () => {
         </a>
 
         <div className="me">
-          <img src={Me} alt="" srcset="" />
+          <img src={Me} alt="" srcSet="" />
         </div>
         <HeaderSocials />
       </div>

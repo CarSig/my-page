@@ -8,20 +8,20 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="#" className={activeNav === "#" && "active"} onClick={() => setActiveNav("#")}>
+      <a href="#" className={activeNav === "#" ? "active" : undefined} onClick={() => setActiveNav("#")}>
         <AiOutlineHome />
       </a>
-      <a href="#about" className={activeNav === "#about" && "active"} onClick={() => setActiveNav("#about")}>
+      <a href="#about" className={activeNav === "#about" ? "active" : undefined} onClick={() => setActiveNav("#about")}>
         <AiOutlineUser />
       </a>
-      <a href="#services" className={activeNav === "#services" && "active"} onClick={() => setActiveNav("#services")}>
+      <a href="#services" className={activeNav === "#services" ? "active" : undefined} onClick={() => setActiveNav("#services")}>
         <RiServiceLine />
       </a>
 
-      <a href="#portfolio" className={activeNav === "#portfolio" && "active"} onClick={() => setActiveNav("#portfolio")}>
+      <a href="#portfolio" className={activeNav === "#portfolio" ? "active" : undefined} onClick={() => setActiveNav("#portfolio")}>
         <BiBook />
       </a>
-      <a href="#contact" className={activeNav === "#contact" && "active"} onClick={() => setActiveNav("#contact")}>
+      <a href="#contact" className={activeNav === "#contact" ? "active" : undefined} onClick={() => setActiveNav("#contact")}>
         <BiMessageSquareDetail />
       </a>
     </nav>
