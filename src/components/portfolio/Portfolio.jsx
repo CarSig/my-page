@@ -10,14 +10,16 @@ const data = [
   { id: 1, image: img1, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "finance app" },
   { id: 2, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "social media app" },
   { id: 3, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "airhelp app" },
-  { id: 4, image: img3, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "tasktracker app" },
-  { id: 5, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "fitness app" },
-  { id: 6, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "another app" },
+  // { id: 4, image: img3, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "tasktracker app" },
+  // { id: 5, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "fitness app" },
+  // { id: 6, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "another app" },
 ];
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
+      <br />
+      <br />
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">

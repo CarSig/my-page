@@ -1,14 +1,16 @@
 import React from "react";
 import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+
 import { IoLogoJavascript } from "react-icons/io";
+import { GrMysql } from "react-icons/gr";
 import { SiMaterialui, SiExpress, SiMongodb, SiMariadb, SiMysql } from "react-icons/si";
-import { FaNodeJs, FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaNodeJs, FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
 
 const Experience = () => {
   return (
     <section id="experience">
-      {" "}
+      <br />
+      <br />
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
       <div className="container experience__container">
@@ -38,6 +40,10 @@ const Experience = () => {
               <SiMaterialui className="experience__details-icon" />
               <h4>Material-UI</h4>
             </div>
+            <div className="experience__details">
+              <FaSass className="experience__details-icon" />
+              <h4>SASS</h4>
+            </div>
           </div>
         </div>
         {/*BACKEND*/}
@@ -60,7 +66,7 @@ const Experience = () => {
                 <h4>Mongo DB</h4>
               </div>
               <div className="experience__details">
-                <SiMysql className="experience__details-icon" />
+                <GrMysql className="experience__details-icon" />
                 <h4>MySQL</h4>
               </div>
               <div className="experience__details">

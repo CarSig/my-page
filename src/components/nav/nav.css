@@ -23,8 +23,27 @@ nav a {
   font-size: 1.1rem;
 }
 
-nav a:hover {
-  background: rgba(0, 0, 0, 0.3);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+[navbar-tooltip]:hover::after {
+  position: absolute;
+  content: attr(navbar-tooltip);
+  margin-top: 2.8rem;
+  margin-left: -1.2rem;
+  font-size: 0.9rem;
+
+  animation: fadeIn ease 1.5s;
+  -webkit-animation: fadeIn ease 1.5s;
+  -moz-animation: fadeIn ease 1.5s;
+  -o-animation: fadeIn ease 1.5s;
+  -ms-animation: fadeIn ease 1.5s;
 }
 
 nav a.active {
