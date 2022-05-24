@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
-import Me from "../../assets/l2.jpg";
+import Me from "../../assets/lbdbk.jpg";
+import "./image.css";
 
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
@@ -8,7 +9,7 @@ import { BsChevronDoubleDown } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <section>
+    <section id="home">
       <div className="container header__container">
         <h5>Hello,I'm</h5>
         <h1>Lovro Boric</h1>
@@ -20,8 +21,12 @@ const Header = () => {
           <BsChevronDoubleDown className="scrollIcon" />
         </a>
 
-        <div className="me">
-          <img src={Me} alt="" srcSet="" />
+        <div className="a-glitch" style={{ "background-image": { Me } }}>
+          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
         </div>
         <HeaderSocials />
       </div>

@@ -9,8 +9,6 @@ import { FaNodeJs, FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
 const Experience = () => {
   return (
     <section id="experience">
-      <br />
-      <br />
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
       <div className="container experience__container">

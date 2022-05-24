@@ -3,14 +3,14 @@ import "./nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { MdOutlineCollections } from "react-icons/md";
 
-import { RiCodeSSlashLine, RiServiceLine } from "react-icons/ri";
-import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
+import { RiCodeSSlashLine } from "react-icons/ri";
+import { BiMessageSquareDetail } from "react-icons/bi";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="#" navbar-tooltip="Home" className={activeNav === "#" ? "active" : undefined} onClick={() => setActiveNav("#")}>
+      <a href="#home" navbar-tooltip="Home" className={activeNav === "#" ? "active" : undefined} onClick={() => setActiveNav("#")}>
         <AiOutlineHome />
       </a>
       <a href="#about" navbar-tooltip="About" className={activeNav === "#about" ? "active" : undefined} onClick={() => setActiveNav("#about")}>
@@ -24,9 +24,9 @@ const Nav = () => {
       >
         <RiCodeSSlashLine />
       </a>
-      <a href="#services" navbar-tooltip="Services" className={activeNav === "#services" ? "active" : undefined} onClick={() => setActiveNav("#services")}>
+      {/**   <a href="#services" navbar-tooltip="Services" className={activeNav === "#services" ? "active" : undefined} onClick={() => setActiveNav("#services")}>
         <RiServiceLine />
-      </a>
+      </a>*/}
 
       <a href="#portfolio" navbar-tooltip="Portfolio" className={activeNav === "#portfolio" ? "active" : undefined} onClick={() => setActiveNav("#portfolio")}>
         <MdOutlineCollections />

@@ -46,7 +46,7 @@
 /*===========IMAGE============*/
 .me {
   width: 22rem;
-  height: 30rem;
+  height: 35rem;
   /* to vidi je li absolute ili sto*/
   position: relative;
   left: calc(50% - 11rem);

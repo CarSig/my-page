@@ -27,28 +27,27 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <br />
-      <br />
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
+
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>lovro.boric@gmail.com</h5>
-            <a href="mailto:lovro.boric@gmail.com" target="_blank">
+          <a href="mailto:lovro.boric@gmail.com" target="_blank" rel="noreferrer">
+            <article className="contact__option">
+              <MdOutlineEmail className="contact__option-icon" />
+              <h4>Email</h4>
+              <h5>lovro.boric@gmail.com</h5>
               Send a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <BsWhatsapp className="contact__option-icon" />
-            <h4>WhatsApp</h4>
-            <h5>lovro.boric@gmail.com</h5>
-            <a href="https://api.whatsapp.com/send?phone=004917640454763" target="_blank">
-              Send a message
-            </a>
-          </article>
+            </article>
+          </a>
+          <a href="https://api.whatsapp.com/send?phone=004917640454763" target="_blank" rel="noreferrer">
+            <article className="contact__option">
+              <BsWhatsapp className="contact__option-icon" />
+              <h4>WhatsApp</h4>
+              <h5>004917640454763</h5>
+              <p>Send a message</p>
+            </article>
+          </a>
         </div>
 
         {/**END of contact options */}
@@ -56,7 +55,7 @@ const Contact = () => {
           <input type="text" name="name" placeholder="Your Full Name" required />
           <input type="email" name="email" placeholder="Your Email" required />
           <textarea name="message" rows="8" placeholder="Your Message" required></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary" style={{ marginTop: "2rem" }}>
             Submit
           </button>
         </form>

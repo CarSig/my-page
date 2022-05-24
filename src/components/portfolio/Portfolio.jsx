@@ -1,8 +1,7 @@
 import React from "react";
 import "./portfolio.css";
 import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
+
 import img4 from "../../assets/4.jpg";
 import img5 from "../../assets/5.jpg";
 
@@ -18,8 +17,6 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <br />
-      <br />
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
@@ -27,16 +24,16 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img src={image} />
+                <img src={image} alt="project" />
               </div>
               <h3>{title}</h3>
 
               <div className="portfolio__item-cta">
                 {" "}
-                <a href={github} className="btn" target="_blank">
+                <a href={github} className="btn" target="_blank" rel="noreferrer">
                   Github
                 </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
+                <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
                   Live Demo
                 </a>
               </div>

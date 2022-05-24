@@ -11,8 +11,9 @@
 }
 
 :root {
-  --color-bg: #1f1f38;
-  --color-bg-variant: #2c2c6c;
+  --color-bg: #14141d;
+  /* --color-bg: #1f1f38; */
+  --color-bg-variant: #2c306c;
   --color-primary: #4db5ff;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #fff;
@@ -60,6 +61,7 @@ h1 {
 }
 
 section {
+  padding-top: 5rem;
   margin-top: 4rem;
 
   min-height: 100vh;
@@ -75,6 +77,10 @@ section > h2 {
   color: var(--color-primary);
 
   margin-bottom: 3rem;
+}
+
+.sectionIntro {
+  margin-top: 3rem;
 }
 
 .text-light {
