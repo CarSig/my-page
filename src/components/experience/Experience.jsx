@@ -3,7 +3,7 @@ import "./experience.css";
 
 import { IoLogoJavascript } from "react-icons/io";
 import { GrMysql } from "react-icons/gr";
-import { SiMaterialui, SiExpress, SiMongodb, SiMariadb, SiMysql } from "react-icons/si";
+import { SiMaterialui, SiExpress, SiMongodb, SiMariadb } from "react-icons/si";
 import { FaNodeJs, FaHtml5, FaCss3Alt, FaReact, FaSass } from "react-icons/fa";
 
 const Experience = () => {
