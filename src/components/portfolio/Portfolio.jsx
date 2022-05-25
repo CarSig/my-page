@@ -1,20 +1,26 @@
 import React from "react";
 import "./portfolio.css";
-import img1 from "../../assets/2.jpg";
+import mitarbeiter from "../../assets/mitarbeiter.jpg";
 
-import img4 from "../../assets/4.jpg";
-import img5 from "../../assets/5.jpg";
+import social from "../../assets/social.png";
+import air from "../../assets/air.jpg";
 
 const data = [
   {
     id: 1,
-    image: img1,
+    image: mitarbeiter,
     github: "https://github.com/CarSig/employeeRegister",
     demo: "https://mitarbeiter-register.herokuapp.com/",
     title: "employee register app",
   },
-  { id: 2, image: img5, github: "http://github.com", demo: "https://mitarbeiter-register.herokuapp.com/", title: "social media app" },
-  { id: 3, image: img4, github: "http://github.com", demo: "https://mitarbeiter-register.herokuapp.com/", title: "airhelp app" },
+  {
+    id: 2,
+    image: air,
+    github: "https://github.com/CarSig/airlinesReact/tree/master",
+    demo: "https://trusting-fermat-25b0c6.netlify.app/",
+    title: "airhelp app",
+  },
+  { id: 3, image: social, github: "https://github.com/CarSig/material2022", demo: "https://glowing-blancmange-97f74c.netlify.app/", title: "social app" },
   // { id: 4, image: img3, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "tasktracker app" },
   // { id: 5, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "fitness app" },
   // { id: 6, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "another app" },
