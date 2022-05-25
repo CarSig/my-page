@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.css";
-import mitarbeiter from "../../assets/mitarbeiter.jpg";
+import mitarbeiter from "../../assets/mitarbeiter.png";
 
 import social from "../../assets/social.png";
-import air from "../../assets/air.jpg";
+import air from "../../assets/air.png";
 
 const data = [
   {
