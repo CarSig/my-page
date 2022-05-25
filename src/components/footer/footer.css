@@ -6,7 +6,8 @@ footer {
   margin-top: 7rem;
 }
 
-footer a {
+footer a,
+h5 {
   color: var(--color-bg);
 }
 

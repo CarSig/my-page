@@ -4,12 +4,10 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer>
-      <a href="#" className="footer__logo">
-        Lovro
-      </a>
+      <h5 className="footer__logo">Lovro Boric</h5>
       <ul className="permalinks">
         <li>
-          <a href="#">Home</a>
+          <a href="#home">Home</a>
         </li>
         <li>
           <a href="#about">About</a>
