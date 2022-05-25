@@ -14,14 +14,7 @@
 }
 
 .about__me-image {
-  border-radius: 2rem;
-  overflow: hidden;
-  transform: rotate(10deg);
-  transition: var(--transition);
-}
-
-.about__me-image:hover {
-  transform: rotate(0);
+  max-width: 20vw;
 }
 
 .about__cards {
@@ -74,15 +67,18 @@
     width: 50%;
     margin: 2rem auto 4rem;
   }
-}
-
-.about__content p {
-  margin: 1rem 0 1.5rem;
-  color: var(--color-light);
+  .about__content p {
+    margin: 1rem 0 1.5rem;
+    color: var(--color-light);
+  }
 }
 
 /*=========MEDIA QUERIES(Medium)========*/
 @media screen and (max-width: 1024px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
   .about__me {
     width: 65%;
     margin: 0 auto 3rem;
@@ -99,5 +95,8 @@
 
   .about__content p {
     margin: 1.5rem 0;
+  }
+  .about__me-image {
+    display: none;
   }
 }

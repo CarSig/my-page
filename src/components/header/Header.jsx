@@ -28,7 +28,7 @@ const Header = () => {
           <img className="a-glitch__img" src={Me} alt="" srcSet="" />
           <img className="a-glitch__img" src={Me} alt="" srcSet="" />
         </div>
-        <HeaderSocials />
+        <HeaderSocials className="socialsComp" />
       </div>
     </section>
   );

@@ -23,6 +23,9 @@ nav a {
   font-size: 1.1rem;
 }
 
+nav a:hover {
+  color: var(--color-primary);
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -38,6 +41,7 @@ nav a {
   margin-top: 2.8rem;
   margin-left: -1.2rem;
   font-size: 0.9rem;
+  color: var(--color-primary);
 
   animation: fadeIn ease 1.5s;
   -webkit-animation: fadeIn ease 1.5s;
@@ -47,6 +51,6 @@ nav a {
 }
 
 nav a.active {
-  background: var(--color-bg);
-  color: var(--color-white);
+  background: var(--color-primary);
+  color: var(--color-bg);
 }

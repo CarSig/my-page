@@ -13,7 +13,7 @@ const About = () => {
       <h2>About me</h2>
 
       <div className="container about__container">
-        <div className="">
+        <div className="about__me-image">
           <div className="c-glitch" style={{ "background-image": { Me2 } }}>
             <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
             <img className="c-glitch__img" src={Me2} alt="" srcSet="" />

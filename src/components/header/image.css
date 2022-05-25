@@ -299,3 +299,11 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+/*=========MEDIA QUERIES(Medium)========*/
+@media screen and (max-width: 1024px) {
+  .a-glitch__img,
+  .a-glitch {
+    height: 40rem;
+  }
+}
