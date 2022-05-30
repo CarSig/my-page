@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css";
-import Me from "../../assets/lbdbk.jpg";
+import Me from "../../assets/lbdbk1.jpg";
 import "./image.css";
 
 import CTA from "./CTA";
@@ -16,19 +16,22 @@ const Header = () => {
         <h5 className="text-light">Fullstack developer</h5>
         <CTA />
 
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-          <BsChevronDoubleDown className="scrollIcon" />
-        </a>
+        <div className="grid">
+          <HeaderSocials className="socialsComp" />
 
-        <div className="a-glitch" style={{ "background-image": { Me } }}>
-          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-          <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+          <div className="a-glitch" style={{ backgroundImage: { Me } }}>
+            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
+            <img className="a-glitch__img" src={Me} alt="" srcSet="" />*
+          </div>
+
+          <a href="#contact" className="scroll__down">
+            Scroll Down
+            <BsChevronDoubleDown className="scrollIcon" />{" "}
+          </a>
         </div>
-        <HeaderSocials className="socialsComp" />
       </div>
     </section>
   );

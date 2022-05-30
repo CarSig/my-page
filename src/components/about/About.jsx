@@ -14,7 +14,7 @@ const About = () => {
 
       <div className="container about__container">
         <div className="about__me-image">
-          <div className="c-glitch" style={{ "background-image": { Me2 } }}>
+          <div className="c-glitch" style={{ backgroundImage: { Me2 } }}>
             <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
             <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
             <img className="c-glitch__img" src={Me2} alt="" srcSet="" />

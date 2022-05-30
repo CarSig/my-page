@@ -4,6 +4,7 @@ import mitarbeiter from "../../assets/mitarbeiter.png";
 
 import social from "../../assets/social.png";
 import air from "../../assets/air.png";
+import switchTheme from "../../assets/switch.png";
 
 const data = [
   {
@@ -21,7 +22,13 @@ const data = [
     title: "airhelp app",
   },
   { id: 3, image: social, github: "https://github.com/CarSig/material2022", demo: "https://glowing-blancmange-97f74c.netlify.app/", title: "social app" },
-  // { id: 4, image: img3, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "tasktracker app" },
+  {
+    id: 4,
+    image: switchTheme,
+    github: "https://github.com/CarSig/theme_switch",
+    demo: "https://playful-cheesecake-64cdb4.netlify.app/",
+    title: "Theme switcher ",
+  },
   // { id: 5, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "fitness app" },
   // { id: 6, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "another app" },
 ];

@@ -36,15 +36,15 @@ const Contact = () => {
             <article className="contact__option">
               <MdOutlineEmail className="contact__option-icon" />
               <h4>Email</h4>
-              <h5>lovro.boric@gmail.com</h5>
-              Send a message
+
+              <p>Send a message</p>
             </article>
           </a>
           <a href="https://api.whatsapp.com/send?phone=004917640454763" target="_blank" rel="noreferrer">
             <article className="contact__option">
               <BsWhatsapp className="contact__option-icon" />
               <h4>WhatsApp</h4>
-              <h5>004917640454763</h5>
+
               <p>Send a message</p>
             </article>
           </a>

@@ -16,14 +16,31 @@
 
 /*  C =Custom Styles ------------------------------------- */
 .a-glitch,
+.a-glitch1,
 .a-glitch__img {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
 }
+
 .a-glitch {
   width: 24rem;
-  height: 41rem;
+  height: 32rem;
+  /* to vidi je li absolute ili sto*/
+  position: relative;
+  /* left: calc(50% - 11rem); */
+
+  /* padding: 5rem 1.5rem 1.5rem 1.5rem; */
+  /*------------
+  */
+  top: 4rem;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.a-glitch1 {
+  width: 24rem;
+  height: 30rem;
   /* to vidi je li absolute ili sto*/
   position: relative;
   /* left: calc(50% - 11rem); */
@@ -302,8 +319,16 @@
 
 /*=========MEDIA QUERIES(Medium)========*/
 @media screen and (max-width: 1024px) {
-  .a-glitch__img,
+  /* .a-glitch__img,
   .a-glitch {
     height: 40rem;
-  }
+  } */
+}
+
+@media screen and (max-width: 700px) {
+  /* .a-glitch__img,
+  .a-glitch {
+    width: 21rem;
+    height: 28rem;
+  } */
 }
