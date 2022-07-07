@@ -1,7 +1,6 @@
 import React from "react";
 import "./about.css";
 
-import Me2 from "../../assets/lbbew.jpg";
 import { GiPencilBrush } from "react-icons/gi";
 import { VscServer } from "react-icons/vsc";
 import { RiComputerLine } from "react-icons/ri";
@@ -13,16 +12,6 @@ const About = () => {
       <h2>About me</h2>
 
       <div className="container about__container">
-        <div className="about__me-image">
-          <div className="c-glitch" style={{ backgroundImage: { Me2 } }}>
-            <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
-            <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
-            <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
-            <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
-            <img className="c-glitch__img" src={Me2} alt="" srcSet="" />
-          </div>
-        </div>
-
         <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
@@ -40,17 +29,17 @@ const About = () => {
           </div>
           <div style={{ marginTop: "2rem" }}>
             <p>
-              I am Web Developer from Croatia, located in Berlin, Germany. I have passion for programming, problem solving and creating web apps. I use
-              technologies from the MERN stack to create amazing apps.
+              I am a web developer from Croatia living in Berlin, Germany. Application development, problem-solving, and web development are my passions. To
+              create amazing apps, I utilize the MERN stack.
             </p>
 
             <p>
-              I’ve not always been a developer, I’ve been a video editor and motion designer and got a Master’s Degree in Journalism. But programming feels like
-              home, it unites my will for learning and abstract thinking with creativity and curiosity.
+              In addition to being a developer, I have been a video editor and a motion designer as well as having a Master's Degree in Journalism. Programming,
+              however, feels like home to me, as it combines my love for learning and abstract thinking with creativity and curiosity.
             </p>
             <p>
-              When I’m not coding you can find me with my friends, at a café or bar or rock concerts, playing guitar, swimming, reading a good book or playing
-              chess
+              Whenever I'm not coding, you can find me with friends, at a café or bar, watching a concert, playing guitar, swimming, reading a book, or playing
+              chess.
             </p>
           </div>
 

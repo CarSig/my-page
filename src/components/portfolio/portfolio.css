@@ -33,16 +33,19 @@
 }
 
 /*=========MEDIA QUERIES(Medium)========*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1400px) {
   .portfolio__container {
     grid-template-columns: repeat(2, 1fr);
 
     gap: 1.2rem;
   }
+  .portfolio__item {
+    margin: 1rem;
+  }
 }
 
 /*=========MEDIA QUERIES(small)========*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .portfolio__container {
     grid-template-columns: 1fr;
     gap: 1rem;

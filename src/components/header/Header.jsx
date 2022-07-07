@@ -1,7 +1,8 @@
 import React from "react";
-import "./header.css";
-import Me from "../../assets/lbdbk1.jpg";
 import "./image.css";
+import "./header.css";
+
+import Me2 from "../../assets/lbbew.jpg";
 
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
@@ -11,26 +12,29 @@ const Header = () => {
   return (
     <section id="home">
       <div className="container header__container">
-        <h5>Hello,I'm</h5>
-        <h1>Lovro Boric</h1>
-        <h5 className="text-light">Fullstack developer</h5>
-        <CTA />
+        <div className="contact-options">
+          <h5>Hello,I'm</h5>
+          <h1>Lovro Boric</h1>
+          <h5 className="text-light">Fullstack developer</h5>
+          <CTA />
 
-        <div className="grid">
-          <HeaderSocials className="socialsComp" />
+          <div className="grid">
+            <HeaderSocials className="socialsComp" />
+            <div className="about__me-image">
+              <div className="a-glitch" style={{ backgroundImage: { Me2 } }}>
+                <img className="a-glitch__img" src={Me2} alt="" srcSet="" />
+                <img className="a-glitch__img" src={Me2} alt="" srcSet="" />
+                <img className="a-glitch__img" src={Me2} alt="" srcSet="" />
+                <img className="a-glitch__img" src={Me2} alt="" srcSet="" />
+                <img className="a-glitch__img" src={Me2} alt="" srcSet="" />
+              </div>
+            </div>
 
-          <div className="a-glitch" style={{ backgroundImage: { Me } }}>
-            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-            <img className="a-glitch__img" src={Me} alt="" srcSet="" />
-            <img className="a-glitch__img" src={Me} alt="" srcSet="" />*
+            <a href="#contact" className="scroll__down">
+              Scroll Down
+              <BsChevronDoubleDown className="scrollIcon" />{" "}
+            </a>
           </div>
-
-          <a href="#contact" className="scroll__down">
-            Scroll Down
-            <BsChevronDoubleDown className="scrollIcon" />{" "}
-          </a>
         </div>
       </div>
     </section>

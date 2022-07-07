@@ -11,9 +11,12 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    //TODO: add credentials
 
-    emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY").then(
+
+    //TODO: add credentials
+    // emailjs.sendForm("gmail", "service_bbfffqg", form.current, "nXutX7K1sXMHcNI0h").then(
+
+    emailjs.sendForm("service_bbfffqg", "template_bep4zx8", form.current, "nXutX7K1sXMHcNI0h").then(
       (result) => {
         console.log(result.text);
       },
@@ -40,11 +43,10 @@ const Contact = () => {
               <p>Send a message</p>
             </article>
           </a>
-          <a href="https://api.whatsapp.com/send?phone=004917640454763" target="_blank" rel="noreferrer">
-            <article className="contact__option">
+          <a href="https://wa.me/4917640454763">
+            <article className="contact__option " target="_blank" rel="noreferrer">
               <BsWhatsapp className="contact__option-icon" />
               <h4>WhatsApp</h4>
-
               <p>Send a message</p>
             </article>
           </a>
