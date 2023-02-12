@@ -7,6 +7,9 @@ import Me2 from "../../assets/lbbew.jpg";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import { BsChevronDoubleDown } from "react-icons/bs";
+import NameSpan from "./NameSpan";
+
+const name = "Lovro Boric".split("");
 
 const Header = () => {
   return (
@@ -14,7 +17,9 @@ const Header = () => {
       <div className="container header__container">
         <div className="contact-options">
           <h5>Hello,I'm</h5>
-          <h1>Lovro Boric</h1>
+          <h1>{name.map((letter, index) => {
+            return <NameSpan key={index} className="letter">{letter === " " ? "\u00A0" : letter}</NameSpan>
+          })}</h1>
           <h5 className="text-light">Fullstack developer</h5>
           <CTA />
 

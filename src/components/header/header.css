@@ -16,6 +16,11 @@
   position: relative;
   margin-top: -4rem;
 }
+span {
+  display: inline-block;
+  font-size: 5rem;
+  cursor: pointer;
+}
 
 /*===========CTA============*/
 .cta {
