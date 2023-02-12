@@ -12,10 +12,10 @@ const data = [
     id: 1,
     image: gamechanger,
     github: ["https://github.com/LoveHam-Matt-Lovro/full-club-management-client", " https://github.com/LoveHam-Matt-Lovro/full-club-manager-server"],
-    demo: "https://gamechanger-clubmanager.netlifMy.app",
+    demo: "https://gamechanger-clubmanager.netlify.app",
     title: "Game Changer",
-    description: "Full stack sports club management app",
-    tech: "React, Node, MongoDB, Express, Material UI, Bootstrap, CSS, HTML",
+    description: "Full stack sports club management app with drag and drop functionality and data visualization",
+    tech: "React, Node, MongoDB, Express.js",
   },
   {
     id: 2,
@@ -23,27 +23,30 @@ const data = [
     github: ["https://github.com/Minglehackers/Mingle"],
     demo: "https://mingle.adaptable.app/",
     title: "Mingle",
-    description: "Social forum where users can create and join groups to discuss",
-    tech: "React, Node, MongoDB, Express,  CSS, HTML",
+    description: "Social platform  where users can create forums, post, comment and like posts  ",
+    tech: "Handlebars, Express.js,MongoDB,CSS",
   },
   {
     id: 3,
     image: guitar,
     github: ["https://github.com/CarSig/guitarApp"],
-    demo: "guitarly-chord-finder.netlify.app",
+    demo: "https://guitarly-chord-finder.netlify.app",
     title: "Guitarly chordfinder",
-    description: "Guitar chord finder app",
-    tech: "React, Node, MongoDB, Express, Material UI, Bootstrap, CSS, HTML",
+    description: " Search for chords and scales a visual representation of the fretboard or play the chords on the virtual guitar",
+    tech: "React",
   },
-  { id: 4, image: tank, github: ["https://github.com/CarSig/material2022"], demo: "https://glowing-blancmange-97f74c.netlify.app/", title: "social app - CSS" },
+  {
+    id: 4, image: tank, github: ["https://github.com/CarSig/oop-game1"], demo: "https://tank-vs-aliens.netlify.app",
+    title: "Tank vs Aliens", description: "defend your base against alien invasion! Separately control tank and gun turret", tech: "JavaScript, CSS, HTML",
+  },
   {
     id: 5,
     image: dragndrop,
-    github: ["https://github.com/CarSig/theme_switch"],
-    demo: "https://playful-cheesecake-64cdb4.netlify.app/",
-    title: "Theme switcher  - CSS ",
-    description: "Full stack sports club management app",
-    tech: "React, Node, MongoDB, Express, Material UI, Bootstrap, CSS, HTML",
+    github: ["https://github.com/CarSig/spacednd"],
+    demo: "https://space-dnd.netlify.app/",
+    title: "Drag and Drop",
+    description: "Drag and drop functionality with react-dnd library. Move items between lists and reorder them",
+    tech: "React",
   },
   // { id: 5, image: img4, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "fitness app" },
   // { id: 6, image: img5, github: "http://github.com", demo: "https://dribbble.com/ethnfndr", title: "another app" },
@@ -58,29 +61,32 @@ const Portfolio = () => {
         {data.map(({ id, image, title, github, demo, description, tech }) => {
           return (
             <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <a href={demo}>
+              <div className="inner-container">
+                <a href={demo} target="_blank" rel="noreferrer">
                   <h2>{title}</h2>
-                  <img src={image} alt="project" />
+                  <img className="img" src={image} alt="project" />
                 </a>
               </div>
-              <h3>{description}</h3>
-              <h4>{tech}</h4>
+              <p className="description">{description}</p>
 
 
-              <div className="portfolio__item-cta">
+              <div className="buttons">
 
                 {github.map(item => {
-                  return (<a href={item} className="btn" target="_blank" rel="noreferrer">
-                    Github {item === github[0] ? "client" : "server"}
+
+                  return (<a key={item} href={item} className="btn" target="_blank" rel="noreferrer">
+
+                    {github.length < 2 ? "Github" : item === github[0] ? "client" : "server"}
                   </a>)
                 })
                 }
 
                 <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
-                  Live Demo
+                  Demo
                 </a>
+
               </div>
+              <p className="tech">{tech}</p>
             </article>
           );
         })}
