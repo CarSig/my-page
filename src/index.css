@@ -84,6 +84,26 @@ section {
   min-height: 100vh;
 }
 
+section#about {
+  min-width: 100%;
+}
+
+section#portfolio::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+
+  background: url("./assets/14116.jpg");
+  background-size: cover;
+  z-index: -1;
+  /* transform: skewY(-5deg); */
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  mix-blend-mode: soft-light;
+}
 section > h2,
 section > h5 {
   text-align: center;
@@ -117,7 +137,7 @@ a:hover {
   display: inline-block;
   color: var(--color-primary);
   padding: 0.75rem;
-  border-radius: 0.4rem;
+  border-radius: 0.9rem;
   cursor: pointer;
   border: 1px solid var(--color-primary);
   transition: var(--transition);
@@ -138,6 +158,7 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+  border-radius: 1.5rem;
 }
 
 /*=========MEDIA QUERIES(Medium)========*/

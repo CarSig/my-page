@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 15% 70% 15%;
-  margin-top: 5rem;
+  grid-template-columns: 5% 90% 5%;
 }
 
 .header__container {
@@ -38,7 +39,7 @@ span {
 }
 .header__socials {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 0.8rem;
 }
@@ -106,24 +107,6 @@ span {
   .header__socials::before,
   .header__socials::after {
     transform: rotate(90deg);
-  }
-
-  .scroll__down {
-    position: relative;
-
-    /* transform: rotate(90deg); */
-
-    transform: rotate(0deg) translateX(20%) translateY(40%);
-
-    font-size: 1rem;
-  }
-  .scrollIcon {
-    position: relative;
-    bottom: -3rem;
-    right: 5.3rem;
-    width: 5rem;
-    height: 2rem;
-    transform: rotate(0deg);
   }
 }
 

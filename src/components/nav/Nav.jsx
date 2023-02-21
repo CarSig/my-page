@@ -10,10 +10,12 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <a href="#home" navbar-tooltip="Home" className={activeNav === "#" ? "active" : undefined} onClick={() => setActiveNav("#")}>
-        <AiOutlineHome />
-      </a>
-      <a href="#about" navbar-tooltip="About" className={activeNav === "#about" ? "active" : undefined} onClick={() => setActiveNav("#about")}>
+      {
+        // <a href="#home" navbar-tooltip="Home" className={activeNav === "#" ? "active" : undefined} onClick={() => setActiveNav("#")}>
+        //   <AiOutlineHome />
+        // </a>
+      }
+      <a href="#home" navbar-tooltip="About" className={activeNav === "#about" ? "active" : undefined} onClick={() => setActiveNav("#home")}>
         <AiOutlineUser />
       </a>
       <a

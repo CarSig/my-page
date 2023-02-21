@@ -15,13 +15,15 @@ function App() {
 
 
       <Nav />
+
       <Header />
 
-      <About />
       <Experience />
-      {/*<Services />*/}
+
+      {/*<Services />   */}
       <Portfolio />
       <Contact />
+
       <Footer />
 
     </div>

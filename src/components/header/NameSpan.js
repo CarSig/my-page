@@ -1,9 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion, useAnimationControls } from 'framer-motion'
 
 const NameSpan = ({ children }) => {
     const controls = useAnimationControls()
     const [isPlaying, setIsPlaying] = useState(false)
+
+
+    useEffect(() => {
+        rubberBand()
+    }, [])
+
 
     const rubberBand = () => {
         controls.start({

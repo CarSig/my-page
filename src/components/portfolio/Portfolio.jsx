@@ -11,7 +11,7 @@ const data = [
   {
     id: 1,
     image: gamechanger,
-    github: ["https://github.com/LoveHam-Matt-Lovro/full-club-management-client", " https://github.com/LoveHam-Matt-Lovro/full-club-manager-server"],
+    github: "https://github.com/orgs/LoveHam-Matt-Lovro/repositories",
     demo: "https://gamechanger-clubmanager.netlify.app",
     title: "Game Changer",
     description: "Full stack sports club management app with drag and drop functionality and data visualization",
@@ -20,7 +20,7 @@ const data = [
   {
     id: 2,
     image: mingle,
-    github: ["https://github.com/Minglehackers/Mingle"],
+    github: "https://github.com/Minglehackers/Mingle",
     demo: "https://mingle.adaptable.app/",
     title: "Mingle",
     description: "Social platform  where users can create forums, post, comment and like posts  ",
@@ -29,20 +29,20 @@ const data = [
   {
     id: 3,
     image: guitar,
-    github: ["https://github.com/CarSig/guitarApp"],
+    github: "https://github.com/CarSig/guitarApp",
     demo: "https://guitarly-chord-finder.netlify.app",
     title: "Guitarly chordfinder",
     description: " Search for chords and scales a visual representation of the fretboard or play the chords on the virtual guitar",
     tech: "React",
   },
   {
-    id: 4, image: tank, github: ["https://github.com/CarSig/oop-game1"], demo: "https://tank-vs-aliens.netlify.app",
+    id: 4, image: tank, github: "https://github.com/CarSig/oop-game1", demo: "https://tank-vs-aliens.netlify.app",
     title: "Tank vs Aliens", description: "defend your base against alien invasion! Separately control tank and gun turret", tech: "JavaScript, CSS, HTML",
   },
   {
     id: 5,
     image: dragndrop,
-    github: ["https://github.com/CarSig/spacednd"],
+    github: "https://github.com/CarSig/spacednd",
     demo: "https://space-dnd.netlify.app/",
     title: "Drag and Drop",
     description: "Drag and drop functionality with react-dnd library. Move items between lists and reorder them",
@@ -63,30 +63,26 @@ const Portfolio = () => {
             <article key={id} className="portfolio__item">
               <div className="inner-container">
                 <a href={demo} target="_blank" rel="noreferrer">
-                  <h2>{title}</h2>
                   <img className="img" src={image} alt="project" />
                 </a>
               </div>
+              <h2 className="card-title">{title}</h2>
               <p className="description">{description}</p>
 
 
+
+              <p className="tech">Tech stack: {tech}</p>
               <div className="buttons">
 
-                {github.map(item => {
-
-                  return (<a key={item} href={item} className="btn" target="_blank" rel="noreferrer">
-
-                    {github.length < 2 ? "Github" : item === github[0] ? "client" : "server"}
-                  </a>)
-                })
-                }
+                <a href={github} className="btn smallBtn" target="_blank" rel="noreferrer">
+                  Github
+                </a>
 
                 <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">
                   Demo
                 </a>
 
               </div>
-              <p className="tech">{tech}</p>
             </article>
           );
         })}
