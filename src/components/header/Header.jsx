@@ -13,8 +13,8 @@ const Header = () => {
       <div className="container header__container">
         <div className="contact-options">
           <Title />
-          <CTA />
           <About />
+
 
 
         </div>

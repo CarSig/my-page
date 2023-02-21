@@ -78,14 +78,17 @@ h1 {
 }
 
 section {
-  padding-top: 5rem;
-  margin-top: 4rem;
+  padding-top: 3rem;
+  margin-top: 3rem;
 
   min-height: 100vh;
 }
 
 section#about {
   min-width: 100%;
+  padding-top: 2rem;
+  margin: 2rem;
+  /* min-height: 50vh; */
 }
 
 section#portfolio::before {

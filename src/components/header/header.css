@@ -25,7 +25,7 @@ span {
 
 /*===========CTA============*/
 .cta {
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   display: flex;
   gap: 1.2rem;
   justify-content: center;
@@ -35,7 +35,7 @@ span {
 .header {
   position: relative;
 
-  top: 14rem;
+  top: 10rem;
 }
 .header__socials {
   display: flex;

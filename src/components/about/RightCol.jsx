@@ -3,6 +3,7 @@ import { GiPencilBrush } from "react-icons/gi";
 import { VscServer } from "react-icons/vsc";
 import { RiComputerLine } from "react-icons/ri";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import CTA from '../header/CTA';
 const RightCol = () => {
     return (
         <div className="rightCol">
@@ -41,7 +42,7 @@ const RightCol = () => {
                     chess.
                 </p>
             </div>
-
+            <CTA />
             {     /* <a href="#contact" className="btn btn-primary" style={{ marginTop: "2rem" }}>
             Lets Talk
     </a>*/}
